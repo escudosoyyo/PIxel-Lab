@@ -1,0 +1,99 @@
+body{
+background:#eee5ff;
+font-family:Arial;
+margin:0;
+color:#222;
+}
+header{
+background:#5b2a86;
+color:white;
+text-align:center;
+padding:30px;
+}
+h1{
+font-size:40px;
+}
+nav{
+margin-top:20px;
+}
+nav a{
+background:#8e44ad;
+color:white;
+text-decoration:none;
+padding:10px 15px;
+margin:5px;
+border-radius:5px;
+display:inline-block;
+}
+nav a:hover{
+background:#d8a7ff;
+color:black;
+}
+section{
+background:white;
+width:80%;
+margin:40px auto;
+padding:30px;
+border-radius:10px;
+}
+h2{
+color:#5b2a86;
+}
+p{
+font-size:18px;
+line-height:1.5;
+}
+.tarjetas{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+.tarjeta{
+background:#ead7ff;
+padding:20px;
+width:200px;
+border-radius:10px;
+}
+footer{
+background:#5b2a86;
+color:white;
+text-align:center;
+padding:15px;
+}
+.wesley{
+    text-align: center;
+}
+.tizi{
+    font-size: large;
+color: black;
+background-color: #8e44ad;
+margin-left: 60px;
+}
+.papigaby{
+    margin-left: 60px;
+}
+.jefe1{
+display:flex;
+justify-content:center;
+gap:20px;    
+}
+.contenedor-columnas {
+  display: flex;    
+  gap: 20px;       
+  max-width: 800px;  
+  margin: 0 auto;
+}
+.columna {
+  flex: 1;
+  padding: 15px;    
+  text-align: center;  
+}
+
+.columna img {
+  width: 100%;    
+  height: auto;       
+  border-radius: 4px;
+}
+
+
+
