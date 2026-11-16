@@ -1,99 +1,231 @@
-body{
-background:#eee5ff;
-font-family:Arial;
-margin:0;
-color:#222;
+
+* {
+    box-sizing: border-box;
 }
-header{
-background:#5b2a86;
-color:white;
-text-align:center;
-padding:30px;
+
+body {
+    background: #eee5ff;
+    font-family: Arial;
+    margin: 0;
+    color: #222;
 }
-h1{
-font-size:40px;
+
+header {
+    background: #5b2a86;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
-nav{
-margin-top:20px;
+
+h1 {
+    font-size: 40px;
 }
-nav a{
-background:#8e44ad;
-color:white;
-text-decoration:none;
-padding:10px 15px;
-margin:5px;
-border-radius:5px;
-display:inline-block;
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
 }
-nav a:hover{
-background:#d8a7ff;
-color:black;
+
+nav a {
+    background: #8e44ad;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0;
+    border-radius: 5px;
+    display: inline-block;
 }
-section{
-background:white;
-width:80%;
-margin:40px auto;
-padding:30px;
-border-radius:10px;
+
+nav a:hover {
+    background: #d8a7ff;
+    color: black;
 }
-h2{
-color:#5b2a86;
+
+section {
+    background: white;
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
 }
-p{
-font-size:18px;
-line-height:1.5;
+
+h2 {
+    color: #5b2a86;
 }
-.tarjetas{
-display:flex;
-justify-content:center;
-gap:20px;
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
 }
-.tarjeta{
-background:#ead7ff;
-padding:20px;
-width:200px;
-border-radius:10px;
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-footer{
-background:#5b2a86;
-color:white;
-text-align:center;
-padding:15px;
+
+.tarjeta {
+    background: #ead7ff;
+    padding: 20px;
+    width: 200px;
+    max-width: 100%;
+    border-radius: 10px;
 }
-.wesley{
+
+footer {
+    background: #5b2a86;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.wesley {
     text-align: center;
 }
-.tizi{
+
+.tizi {
     font-size: large;
-color: black;
-background-color: #8e44ad;
-margin-left: 60px;
-}
-.papigaby{
+    color: black;
+    background-color: #8e44ad;
     margin-left: 60px;
 }
-.jefe1{
-display:flex;
-justify-content:center;
-gap:20px;    
+
+.papigaby {
+    margin-left: 60px;
 }
+
+.jefe1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .contenedor-columnas {
-  display: flex;    
-  gap: 20px;       
-  max-width: 800px;  
-  margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
+
 .columna {
-  flex: 1;
-  padding: 15px;    
-  text-align: center;  
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    text-align: center;
 }
 
 .columna img {
-  width: 100%;    
-  height: auto;       
-  border-radius: 4px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
+/* TABLETS */
+@media (max-width: 768px) {
 
+    h1 {
+        font-size: 32px;
+    }
 
+    section {
+        width: 90%;
+        padding: 20px;
+        margin: 25px auto;
+    }
+
+    .tarjetas {
+        gap: 15px;
+    }
+
+    .tarjeta {
+        width: 45%;
+    }
+
+    .contenedor-columnas {
+        flex-direction: column;
+    }
+
+    .columna {
+        width: 100%;
+    }
+
+    .tizi,
+    .papigaby {
+        margin-left: 0;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 480px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 15px;
+    }
+
+    nav a {
+        text-align: center;
+        width: 100%;
+    }
+
+    section {
+        width: 94%;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+    .jefe1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-columnas {
+        flex-direction: column;
+    }
+
+    .columna {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tizi,
+    .papigaby {
+        margin-left: 0;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+}
